@@ -1,13 +1,12 @@
 {
-    "name": "onlyshow/dtmcli-php",
+    "name": "yedf/dtmcli-php",
     "type": "library",
     "require": {
         "ext-json": "*",
         "mix/guzzle": "^2.2"
     },
     "require-dev": {
-        "mix/vega": "^3.0",
-        "workerman/workerman": "^4.0"
+
     },
     "autoload": {
         "psr-4": {
