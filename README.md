@@ -28,4 +28,4 @@ function FireTcc () {
 见[https://github.com/yedf/dtmcli-php-sample](https://github.com/yedf/dtmcli-php-sample)
 
 # 特别说明
-使用[mix/guzzle](https://github.com/mix-php/guzzle)为http客户端，支持swoole携程请求
+使用[mix/guzzle](https://github.com/mix-php/guzzle)为http客户端，支持swoole协程请求
