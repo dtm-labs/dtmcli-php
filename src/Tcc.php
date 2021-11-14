@@ -51,7 +51,7 @@ class Tcc
                 'branch_type' => 'try',
             ],
         ]);
-        checkFailure($response->getBody()->read(1024));
+        checkFailure($response->getBody()->getContents());
         return $response;
     }
 }
