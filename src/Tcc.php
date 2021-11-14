@@ -42,7 +42,7 @@ class Tcc
             ],
         ]);
         checkStatus($response->getStatusCode());
-        return $client->post($tryUrl, [
+        $response = $client->post($tryUrl, [
             'json' => $body,
             'query' => [
                 'gid' => $this->gid,
@@ -51,5 +51,7 @@ class Tcc
                 'branch_type' => 'try',
             ],
         ]);
+        checkFailure($response->getBody()->getContents());
+        return $response;
     }
 }
