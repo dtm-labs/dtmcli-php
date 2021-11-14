@@ -28,6 +28,18 @@ namespace Dtmcli {
     }
 
     /**
+     * @param string $str
+     * @param string $errorMsg error message default ''
+     * @throws \Exception
+     */
+    function checkFailure(string $str, string $errorMsg = ''): void
+    {
+        if (stripos($str, 'FAILURE') !== false) {
+            throw new \Exception($errorMsg);
+        }
+    }
+
+    /**
      * @param string $dtmUrl
      * @param callable $cb
      * @return string
